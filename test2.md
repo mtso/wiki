@@ -9,5 +9,5 @@ commit 0d37165532e85ffbf90b0048d85ee18b9409854a
 
 ## section 2!
 
-here's some more text
+here is some more text
 
