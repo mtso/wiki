@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "clean": "rm -rf ./page/*",
+    "build-histories": "PAGE_DIR=./src/content/page/ OUTPUT_DIR=./page/ bash scripts/generate-page-histories.sh",
+    "build-pages": "node ./src/index.js ./src/content/page/ ./page/",
+    "build": "npm run clean && npm run build-histories && npm run build-pages"
+  },
+  "dependencies": {
+    "markdown-it": "^10.0.0"
+  }
+}

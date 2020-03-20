@@ -1,0 +1,11 @@
+html,body {
+  margin:0; padding:0;
+}
+body {
+  font-family: sans-serif;
+}
+p { line-height:1.2em; }
+main,span {
+  padding: 2em;
+  max-width: 33em;
+}

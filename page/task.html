@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><body><head><link href="../links/style.css" rel="stylesheet"></head><main><h1>Description</h1>
+<p>Task is a project management tool run from the command line. It allows team members to create and assign tasks. The data is saved as a text file that can be pushed to any git server.</p>
+<h2>Project</h2>
+<h3>File Organization</h3>
+<p>From the beginning, we wanted to create an application library that could be portable to different platforms and their consoles. Thus, we split up the project into three Visual Studio projects managed by a single solution. These were: Task (the common static library), TaskApp, and TaskTests. The TaskApp project contained the main entry point into the console process. While the goal was to put all console-specific code into TaskApp, it did not really turn out that way. In the end, combining the code between the static library and front-end console process forced us to add some Windows32 specific code into the static library.</p>
+<h3>Hash Table</h3>
+<p>I implemented a hashed dictionary as the hash table for our project.</p>
+<h2>Breakthroughs</h2>
+<h3>Continuous Integration</h3>
+<p>One of the most enjoyable things I learned while managing the project was continuous integration. This was the first group programming project that I have been involved in, so I was a little anxious about how successfully run the project.</p>
+<h3>SHA-1</h3>
+<p>In an effort to integrate into git workflow as much as possible, we decided to use SHA-1 hashes to identify task entries. These hashes should look familiar to anyone who has used git before. Any number of unique characters can be used to identify and retrieve a task object. (These are currently searched linearly).</p>
+<h2>Takeaways</h2>
+<p>My project management skills need improvement. While merging code into a cohesive program went well, I think still earlier communication would have served the team better. After a large push, I realized that another team member's semantic style could be very different from mine. This took me by surprise, especially the use of the std's iterator construct.</p>
+</main><span><a href="./task.history.html">Updated on 3/19/2020, edited 1 times.</a><span></body><html>
